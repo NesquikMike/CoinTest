@@ -1,4 +1,4 @@
-package coin
+package coins
 
 func ContFlip() int {
 	tailsYet := false

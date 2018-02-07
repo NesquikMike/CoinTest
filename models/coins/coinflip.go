@@ -1,4 +1,4 @@
-package coin
+package coins
 
 import (
 	"math/rand"
