@@ -1,11 +1,19 @@
 package coins
 
-func ContFlip() int {
+var c Coin
+
+func ContFlip() (string, int) {
+	history := ""
 	tailsYet := false
 	numFlips := 0
+	var flip string
 	for tailsYet == false {
-		tailsYet = CoinFlip()
+		flip = c.Flip()
 		numFlips++
+		history += flip
+		if flip == tails {
+			tailsYet = true
+		}
 	}
-	return numFlips
+	return history, numFlips
 }
