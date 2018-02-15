@@ -7,5 +7,5 @@ import (
 )
 
 func main()  {
-	fmt.Printf("It takes on average %v flips to get a tails.", coins.AverageFlip(1000))
+	fmt.Printf("It takes on average %v flips to get a tails.", coins.FlipHistory(1000))
 }

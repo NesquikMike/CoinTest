@@ -5,13 +5,23 @@ import (
 	"time"
 )
 
-const tailsProb = .5
+const (
+	tailsProb = .5
+	heads string = "H"
+	tails string = "T"
+)
 
-func CoinFlip() (bool) {
+type Coin struct {
+}
+
+func (c Coin) Flip() (string) {
+
 	rand.Seed(time.Now().UnixNano())
 	x := rand.Float64()
+
 	if x < tailsProb {
-		return true
+		return heads
+	} else {
+		return tails
 	}
-	return false
 }
